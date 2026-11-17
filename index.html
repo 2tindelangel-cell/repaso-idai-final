@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muro de la Clase - Desarrollo Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>🚀 Muro de la Clase: Desarrollo Web</h1>
+    <p>Proyecto colaborativo en GitHub (HTML5, CSS3 & JS)</p>
+    
+    <!-- Barra de búsqueda controlada por app.js -->
+    <div class="search-container">
+      <input 
+        type="search" 
+        id="searchInput" 
+        placeholder="Buscar compañero por nombre o tecnología..."
+        aria-label="Buscar compañero"
+      >
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ===================================================================
+         ZONA DE TRABAJO COLABORATIVO
+         Instrucciones para alumnos:
+         1. Crea tu rama: git checkout -b feat/tu-nombre
+         2. Copia el bloque <article class="card">...</article> de ejemplo.
+         3. Pégalo AL FINAL de esta sección (antes del cierre de </section>).
+         4. Personaliza tus datos sin borrar las tarjetas de tus compañeros.
+    ==================================================================== -->
+    <section class="grid-muro" id="muroGrid">
+
+      <!-- EJEMPLO (Tarjeta del Profesor - NO BORRAR) -->
+      <article class="card">
+        <div class="card-header">
+          <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Profe" alt="Avatar del Profesor" class="avatar">
+          <div>
+            <h2 class="nombre">Prof. Titular</h2>
+            <span class="rol">Instructor Web</span>
+          </div>
+        </div>
+        <p class="bio">Apasionado por enseñar desarrollo web, resolver conflictos de merge y el buen café.</p>
+        <div class="tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Git</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com" target="_blank" rel="noopener" class="btn-github">Ver GitHub</a>
+          <button type="button" class="btn-like" data-likes="1">
+            👏 <span class="like-count">1</span>
+          </button>
+        </div>
+      </article>
+      <!-- FIN EJEMPLO -->
+
+      <!-- ⬇️ ALUMNOS: PEGUEN SU TARJETA DEBAJO DE ESTA LÍNEA ⬇️ -->
+
+
+      <!-- ⬆️ ALUMNOS: PEGUEN SU TARJETA ARRIBA DE ESTA LÍNEA ⬆️ -->
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Generación 2026 • Hecho con ramas y Pull Requests</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
